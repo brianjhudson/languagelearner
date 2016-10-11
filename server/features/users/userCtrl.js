@@ -2,6 +2,9 @@ const User = require("./User");
 
 module.exports = {
 	getAuthUser(req, res) {
-    res.send(req.user)
+    if (!req.user) {
+      return res.send(null);
+    }
+    return res.send(req.user)
 	},
 };

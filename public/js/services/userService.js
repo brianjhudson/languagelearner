@@ -1,3 +1,5 @@
 angular.module("languageApp").service("userService", function($http) {
-  this.test = "Service Working";
+  this.getUser = () => {
+    return $http.get("/user")
+  }
 })
