@@ -22,6 +22,7 @@ module.exports = new Strategy({
             newUser.name  = profile.displayName;
             if (profile.email) newUser.email = profile.email[0].value;
 
+
             newUser.save(function(err) {
                 if (err)
                     throw err;

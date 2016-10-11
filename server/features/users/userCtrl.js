@@ -5,6 +5,8 @@ module.exports = {
     if (!req.user) {
       return res.send(null);
     }
-    return res.send(req.user)
-	},
+    User.findById(req.user._id, (err, user) => {
+      return res.send(user)
+    })
+	}
 };
