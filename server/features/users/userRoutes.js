@@ -8,4 +8,5 @@ module.exports = app => {
     passport.authenticate("facebook",
     {successRedirect: "http://localhost:3000/#/user", failureRedirect: "http://localhost:3000/#/login"})
   );
+  app.get("/user", userCtrl.getAuthUser);
 }
