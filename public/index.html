@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Marathi Learning App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body ng-controller="userController">
     <nav>
@@ -25,7 +28,8 @@
         </ul>
       </div>
     </nav>
-    {{test}}
+    <p>{{test}}</p>
+    <p>{{serviceTest}}</p>
     <ui-view></ui-view>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
@@ -33,5 +37,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/controllers/userController.js" charset="utf-8"></script>
+    <script src="js/services/userService.js" charset="utf-8"></script>
   </body>
 </html>

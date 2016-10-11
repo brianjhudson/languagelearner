@@ -3,21 +3,21 @@ angular.module("languageApp", ["ui.router", "ui.materialize"])
   $urlRouterProvider.otherwise("shop");
   $stateProvider
     .state("home", {
-    controller: userController
+    controller: "userController"
     , url: "/"
-    , template: homeHtml
+    , template: "./views/home.html"
   })
 
   .state("login", {
-    controller: userController
+    controller: "userController"
     , url: "/login"
-    , template: loginHtml
+    , template: "./views/login.html"
   })
 
   .state("user", {
-    controller: userController
+    controller: "userController"
     , url: "/user"
-    , template: userHtml
+    , template: "./views/user.html"
   })
 
   $urlRouterProvider.otherwise("/");
