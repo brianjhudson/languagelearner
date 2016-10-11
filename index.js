@@ -12,7 +12,7 @@ app.use(session({secret: config.session.secret}));
 
 // Passport
 const passport = require("passport")
-    , strategy = require("./server/config/facebookStrategy");
+    , strategy = require("./server/facebookStrategy");
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(strategy);

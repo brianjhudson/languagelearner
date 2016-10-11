@@ -5,19 +5,13 @@ angular.module("languageApp", ["ui.router", "ui.materialize"])
     .state("home", {
     controller: "userController"
     , url: "/"
-    , template: "./views/home.html"
-  })
-
-  .state("login", {
-    controller: "userController"
-    , url: "/login"
-    , template: "./views/login.html"
+    , templateUrl: "./views/home.html"
   })
 
   .state("user", {
     controller: "userController"
     , url: "/user"
-    , template: "./views/user.html"
+    , templateUrl: "./views/user.html"
   })
 
   $urlRouterProvider.otherwise("/");
