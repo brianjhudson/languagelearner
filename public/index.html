@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="languageApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Marathi Learning App</title>
+  </head>
+  <body ng-controller="mainController">
+    <nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo" ui-sref="home">Chana</a>
+    <a href="#" class="button-collapse" data-activates="nav-mobile" data-sidenav="left" data-menuwidth="500" data-closeonclick="true"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li class="active"><a ui-sref="Lessons">Profile</a></li>
+      <li><a ui-sref="lessons">Lessons</a></li>
+      <li><a ui-sref="Review">Review</a></li>
+      <li><a ui-sref="login">Sign In</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+    <ul class="side-nav" id="nav-mobile">
+      <li class="active"><a ui-sref="Lessons">Profile</a></li>
+      <li><a ui-sref="lessons">Lessons</a></li>
+      <li><a ui-sref="Review">Review</a></li>
+      <li><a ui-sref="login">Sign In</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+    <ui-view></ui-view>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
