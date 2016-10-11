@@ -3,7 +3,7 @@ angular.module("languageApp", ["ui.router", "ui.materialize"])
   $urlRouterProvider.otherwise("shop");
   $stateProvider
     .state("home", {
-    controller: mainController
+    controller: userController
     , url: "/"
     , template: homeHtml
   })
@@ -21,4 +21,4 @@ angular.module("languageApp", ["ui.router", "ui.materialize"])
   })
 
   $urlRouterProvider.otherwise("/");
-  } );
+  });
